@@ -89,6 +89,8 @@ namespace Blzr.BootstrapSelect
         }
 
         [Parameter] public string Width { get; set; }
+        
+        [Parameter] public string? Header { get; set; }
 
         [Parameter] public bool? ShowSearch 
         {
@@ -281,6 +283,8 @@ namespace Blzr.BootstrapSelect
         public bool UseIcon => IconField is not null;
 
         public bool UseSubtext => SubTextField is not null;
+        
+        public bool ShowHeader => Header is not null;
 
         #endregion
 
